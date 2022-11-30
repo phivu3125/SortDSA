@@ -6,19 +6,19 @@ void writeFile3(int i, int a[], int n)
 	{
 		case 0:
 		{
-			writeFile("input_1.txt", a, n);
+			writeFile("input_1.txt", a, n);// rand
 		}
 		case 1:
 		{
-			writeFile("input_2.txt", a, n);
+			writeFile("input_3.txt", a, n);//sort
 		}
 		case 2:
 		{
-			writeFile("input_3.txt", a, n);
+			writeFile("input_4.txt", a, n);//nsort
 		}
 		case 3:
 		{
-			writeFile("input_4.txt", a, n);
+			writeFile("input_2.txt", a, n);// nsort
 		}
 	}
 }

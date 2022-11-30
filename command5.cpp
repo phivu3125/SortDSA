@@ -36,8 +36,10 @@ void checkAlgorithm5(int*& a, int& n, char algorithm1[], char algorithm2[], char
 			double timeUse1, timeUse2;
 			long long countCmp1 = 0;
 			long long countCmp2 = 0;
+			int* b = new int[n];
+			copy(a, a + n, b);
 			callAlgorithm(algorithm1, timeUse1, countCmp1, a, n);
-			callAlgorithm(algorithm2, timeUse2, countCmp2, a, n);
+			callAlgorithm(algorithm2, timeUse2, countCmp2, b, n);
 			checkOutput4(a, n, timeUse1, countCmp1, timeUse2, countCmp2);
 		}
 	}
